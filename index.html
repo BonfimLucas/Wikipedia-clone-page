@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendizagem profunda</title>
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -15,16 +15,16 @@
             <img src="logo.png" width="200" alt="Logo da Wikipedia">
         </picture>
 
-        <div>
+        <nav>
             <input type="search">
             <button type="submit"><strong>Pesquisar</strong></button>
         
             <ul>
                 <li><a href="">Donativos</a></li>
-                <li><a href="">Donativos</a></li>
+                <li><a href="">Criar uma conta</a></li>
                 <li><a href="">Entrar</a></li>
             </ul>
-        </div>
+        </nav>
 
     </header>
 
@@ -35,7 +35,7 @@
     <div class="content">
         <aside>
             <div>
-                <h2>Conteudo</h2>
+                <h4>Conteúdo</h2>
                 <button type="button">ocultar</button>
             </div>
             <hr>
@@ -43,12 +43,12 @@
             <div>
             <p>Inicio</p>
             <details>
-                <summary><a href="#">Introducao</a></summary>
-                    <p><a href="#">Definicoes</a></p>
-                    <p><a href="#">Conceitos fundamentais</a></p>
+                <summary><a href="#introducao">Introducao</a></summary>
+                    <p><a href="#definicoes">Definicoes</a></p>
+                    <p><a href="#conceitosfundamentais">Conceitos fundamentais</a></p>
             </details>
             <details>
-                <summary><a href="#">Interpretacoes</a></summary>
+                <summary><a href="#interpretacoes">Interpretacoes</a></summary>
                     <p><a href="#">Interpretacao baseada no teorema da aproximacao universal</a></p>
                     <p><a href="#">Interpretacao probabilistica</a></p>
             </details>
@@ -56,7 +56,7 @@
                 <p><a href="#">Historia</a></p>
                 <p><a href="#">Redes Neurais Artificiais</a></p>
                 <p><a href="#">Bibliotecas de Software</a></p>
-                <p><a href="#">Ver tambem</a></p>
+                <p><a href="#vertambem">Ver tambem</a></p>
                 <p><a href="#">Referencias</a></p>
                 <p><a href="#">Ligacoes externas</a></p>
                 <p><a href="#">Leitura complementaer</a></p>
@@ -69,57 +69,468 @@
             <article>
             <h1>Aprendizagem Profunda</h1>
             <hr>
-            <div>
-                <h4><a href="#">Artigo</a></h4>
-                <h4><a href="#">Discussao</a></h4>
-            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Artigo</a></li>
+                    <li><a href="#">Discussao</a></li>
+                    <li><a href="">Ler</a></li>
+                    <li><a href="">Editar</a></li>
+                    <li><a href="">Ver Historico</a></li>
+                    <li><a href="">Ferramentas</a></li>
+                </ul>
+            </nav>
 
             <p>
                 A <strong>aprendizagem profunda</strong>, do inglês <strong><i>Deep Learning</i></strong> (também conhecida como <strong>aprendizado estruturado profundo</strong>, <strong>
-                aprendizado<br> hierárquico</strong> ou <strong>aprendizado de máquina profundo</strong>) é um ramo de <a href="#">aprendizado de máquina (Machine Learning)</a> baseado em um<br>
-                conjunto de <a href="#">algoritmos</a> que tentam modelar abstrações de alto nível de dados usando um grafo profundo com várias camadas de<br>
+                aprendizado hierárquico</strong> ou <strong>aprendizado de máquina profundo</strong>) é um ramo de <a href="#">aprendizado de máquina (Machine Learning)</a> baseado em um
+                conjunto de <a href="#">algoritmos</a> que tentam modelar abstrações de alto nível de dados usando um grafo profundo com várias camadas de
                 processamento, compostas de várias transformações <a href="#">lineares</a> e não lineares.<sup><a href="#">[1][2][3][4][5][6][7][8][9]</a></sup>
             </p>
 
             <p>
-                A aprendizagem profunda é parte de uma família mais abrangente de métodos de <a href="#">aprendizado de máquina</a> baseados na<br>
-                aprendizagem de representações de dados. Uma observação (por exemplo, uma imagem), pode ser representada de várias maneiras,<br>
-                tais como um vetor de valores de intensidade por pixel, ou de uma forma mais abstrata como um conjunto de arestas, regiões com um<br>
-                formato particular, etc. Algumas representações são melhores do que outras para simplificar a tarefa de aprendizagem (por exemplo,<br>
-                reconhecimento facial ou reconhecimento de expressões faciais[10]). Uma das promessas da aprendizagem profunda é a substituição<br>
-                de características feitas manualmente por algoritmos eficientes para a aprendizagem de características supervisionada ou<br>
-                semissupervisionada e extração hierárquica de características.[11]
+                A aprendizagem profunda é parte de uma família mais abrangente de métodos de <a href="#">aprendizado de máquina</a> baseados na
+                aprendizagem de representações de dados. Uma observação (por exemplo, uma imagem), pode ser representada de várias maneiras,
+                tais como um <a href="">vetor</a> de valores de intensidade por pixel, ou de uma forma mais abstrata como um conjunto de arestas, regiões com um
+                formato particular, etc. Algumas representações são melhores do que outras para simplificar a tarefa de aprendizagem (por exemplo,
+                reconhecimento facial ou reconhecimento de expressões faciais<sup><a href="">[10]</a></sup>). Uma das promessas da aprendizagem profunda é a substituição
+                de características feitas manualmente por algoritmos eficientes para a aprendizagem de características supervisionada ou
+                semissupervisionada e <a href="">extração hierárquica de características.</a><a href=""><sup>[11]</sup></a>
             </p>
 
             <p>
-                A pesquisa nesta área tenta fazer representações melhores e criar modelos para aprender essas representações a partir de dados<br>
-                não rotulados em grande escala. Algumas das representações são inspiradas pelos avanços da neurociência e são vagamente<br>
-                baseadas na interpretação do processamento de informações e padrões de comunicação em um sistema nervoso, tais como<br>
-                codificação neural que tenta definir uma relação entre vários estímulos e as respostas neuronais associados no cérebro.[12]
+                A pesquisa nesta área tenta fazer representações melhores e criar modelos para aprender essas representações a partir de dados
+                não <a href="">rotulados</a> em grande escala. Algumas das representações são inspiradas pelos avanços da <a href="">neurociência</a> e são vagamente
+                baseadas na interpretação do processamento de informações e padrões de comunicação em um <a href="">sistema nervoso</a>, tais como
+                <a href="">codificação neural</a> que tenta definir uma relação entre vários estímulos e as respostas neuronais associados no <a href="">cérebro.</a><a href=""><sup>[12]</sup></a>
             </p>
 
             <p>
-                Várias arquiteturas de aprendizagem profunda, tais como redes neurais profundas, redes neurais profundas convolucionais, redes de<br>
-                crenças profundas e redes neurais recorrentes têm sido aplicadas em áreas como visão computacional, reconhecimento automático<br>
-                de fala, processamento de linguagem natural, reconhecimento de áudio e bioinformática, onde elas têm se mostrado capazes de<br>
+                Várias arquiteturas de aprendizagem profunda, tais como <a href="">redes neurais profundas</a>, <a href="">redes neurais profundas convolucionais</a>, redes de
+                crenças profundas e redes neurais recorrentes têm sido aplicadas em áreas como <a href="">visão computacional</a>, <a href="">reconhecimento automático
+                de fala</a>, <a href="">processamento de linguagem natural</a>, reconhecimento de áudio e <a href="">bioinformática</a>, onde elas têm se mostrado capazes de
                 produzir resultados do estado-da-arte em várias tarefas.
             </p>
 
-            <p>Aprendizagem profunda foi caracterizada como a expressão na moda, ou uma recaracterização das redes neurais.[13][14]</p>
+            <p>Aprendizagem profunda foi caracterizada como a expressão na moda, ou uma recaracterização das <a href="">redes neurais.</a><a href=""><sup>[13][14]</sup></a></p>
             </article>
         
+            <article>
+                <h1 id="introducao">Introdução</h1>
+                <hr>
+                <h3 id="#definicoes"><strong>Definições</strong></h3>
+
+                <p>
+                    A área de aprendizagem profunda tem sido caracterizada de várias maneiras.<sup><a href="">[15]</a></sup> Por exemplo, em 1986, Rina Dechter introduziu os
+                    conceitos de aprendizagem profunda de primeira e segunda ordens no contexto de satisfação de restrições.<sup><a href="">[15]</a></sup> Posteriormente, a
+                    aprendizagem profunda foi caracterizada como uma classe de <a href="">algoritmos</a> de <a href="">aprendizagem de máquina</a> que:<sup><a href="">[2](199–200)</a></sup>
+                </p>
+                <ul id="lista_definicoes">
+                    <li>
+                        <p>
+                            usa uma cascata de diversas camadas de unidades de processamento não-linear para a extração e transformação de
+                            características. Cada camada sucessiva usa a saída da camada anterior como entrada. Os algoritmos podem ser
+                            supervisionados ou não supervisionados e as aplicações incluem a análise de padrões (não supervisionada) e de classificação
+                            (supervisionada).
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            são baseados na aprendizagem (supervisionada) de vários níveis de características ou representações dos dados.
+                            Características de nível superior são derivadas das características de nível inferior para formar uma representação hierárquica.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            fazem parte de uma área da aprendizagem de máquina mais ampla que é a aprendizagem de representações de dados.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            aprendem vários níveis de representações que correspondem a diferentes níveis de abstração; os níveis formam uma hierarquia
+                            de conceitos.   
+                        </p>
+                    </li>
+                </ul>
+
+                <p>
+                    Estas definições têm em comum (1) várias camadas e unidades de processamento não linear e (2) a aprendizagem ou
+                    representação supervisionada ou não supervisionada de características em cada camada, com as camadas formando uma
+                    hierarquia das características de baixo nível para as de alto nível.<a href=""><sup>[2](p200)</sup></a> A composição de uma camada de unidades
+                    de processamento não linear usada em um algoritmo de aprendizagem profunda depende no problema a ser resolvido. Camadas que
+                    foram usadas em aprendizagem profunda incluem camadas ocultas de uma <a href="">rede neural artificial</a> e conjuntos de fórmulas
+                    proposicionais complicadas.<sup><a href="">[3]</a></sup> Elas também podem incluir variáveis latentes organizadas em camadas em modelos geradores
+                    profundos tais como os nós em redes de crenças profundas e máquinas de Boltzmann profundas.<a href=""><sup>[16]</sup></a>
+                </p>
+
+                <p>
+                    Algoritmos de aprendizagem profunda transformam suas entradas usando mais camadas do que algoritmos de aprendizagem mais
+                    superficial. Em cada camada, o sinal é transformado por uma unidade de processamento, como um neurônio artificial, cujos
+                    parâmetros são "aprendidos" por meio de treinamento.<a href=""><sup>[5](p6)</sup></a> Uma cadeia de transformações da entrada até a saída é um caminho de
+                    atribuição de crédito (em inglês, abreviado como CAP, credit assignment path). Os CAP descrevem conexões potencialmente
+                    causais entre entradas e saídas e podem variar em comprimento. Para uma rede neural de alimentação direta, a profundidade
+                    dos CAPs, e, portanto, a profundidade da rede, é o número de camadas ocultas, mais um (a camada de saída também é parametrizado).
+                    Para as redes neurais recorrentes, nas quais um sinal pode se propagar por uma camada mais de uma vez, o CAP tem comprimento
+                    potencialmente ilimitado. Não há um limite aceito universalmente para distinguir aprendizagem superficial de aprendizagem
+                    profunda, mas a maioria dos pesquisadores da área concordam que a aprendizagem profunda tem várias camadas não-lineares
+                    (CAP > 2) e <a href="" id="juergen">Juergen Schmidhuber</a> considera CAP > 10 como aprendizagem muito profunda.<sup><a href="">[5]</a>(p7)</sup>
+                </p>
+
+                <h3 id="conceitosfundamentais">Conceitos fundamentais</h2>
+
+                <p>Algoritmos de aprendizagem profunda são baseados em representações distribuídas. A suposição subjacente por trás de
+                   representações distribuídas é que os dados observados são gerados pelas interações de fatores organizados em camadas. A
+                   aprendizagem profunda inclui a suposição de que essas camadas de fatores correspondem a níveis de abstração ou de composição.
+                   Podem ser usadas quantidades e tamanhos de camadas diferentes para fornecer quantidades diferentes de abstração.<sup><a href="">[4]</a></sup>
+                </p>
+
+                <p>
+                   A aprendizagem profunda explora essa ideia de fatores explicativos hierárquicos, em que conceitos de nível superior, mais abstratos,
+                   são aprendidas a partir dos de nível mais baixo. Muitas vezes essas arquiteturas são construídas com um método ganancioso
+                   camada-por-camada. A aprendizagem profunda ajuda a desvendar essas abstrações e a escolher quais características são úteis
+                   para a aprendizagem.<sup><a href="">[4] </a> </sup>
+                </p>
+
+                <p>
+                    Para tarefas de aprendizado supervisionado, os métodos de aprendizagem profunda tornam desnecessária a engenharia de
+                    características, convertendo os dados em representações intermediário compactas semelhantes às de <a href="">componentes principais</a>, e
+                    derivam estruturas em camadas que removem redundâncias na representação.<a href=""><sup>[2]</sup></a>
+                </p>
+
+                <p>
+                    Muitos algoritmos de aprendizagem profunda são aplicados em tarefas de aprendizagem supervisionada. Este é um benefício
+                    importante porque dados não rotulados geralmente são mais abundantes do que dados rotulados. Entre os exemplos de estruturas
+                    profundas que podem ser treinadas de forma não supervisionada estão compressores de histórias neurais<sup><a href="">[17]</a></sup> e redes de crença
+                    profundas.<a href=""><sup>[4][18]</sup></a>
+                </p>
+            </article>
+
+            <article>
+                <h1 id="interpretacoes">Interpretações</h1>
+                <hr>
+                <p>
+                    Redes neurais profundas geralmente são interpretadas em termos do teorema da aproximação universal<a href=""><sup>[19][20][21][22][23]</sup></a> ou <a href="">
+                        inferência
+                        probabilística.
+                    </a><a href=""><sup>[2][3][4][5][18][24]</sup></a>
+                </p>
+
+                <h2><strong>Interpretação baseada no teorem da aproximação universal</strong></h2>
+                <p>
+                    O teorema da aproximação universal refere-se à capacidade de redes neural de alimentação direta com uma única camada oculta,
+                    de tamanho finito, de aproximar <a href="">funções contínuas.</a><sup><a href="">[19][20][21][22][23]</a> </sup>
+                </p>
+
+                <p>
+                    Em 1989, a primeira prova foi publicada por George Cybenko funções de ativação <a href="">sigmóide</a><a href=""><sup>[20]</sup></a> e foi generalizada para arquiteturas
+                    de alimentação direta multicamada em 1991 por Kurt Hornik.<sup><a href="">[21]</a></sup>
+                </p>
+
+                <h2><strong>Interpretação probabilistica</strong></h2>
+
+                <p>
+                    A interpretação <a href="">probabilística</a><sup><a href="">[24]</a></sup> deriva-se da área de <a href="">aprendizagem de máquina</a>. Ela inclui inferência,<a href=""><sup>[2][3][4][5][18][24]</sup></a> e também
+                    conceitos da <a href="">otimização</a> como <a href="">treinamento</a> e <a href="">testes</a>, relacionados à adaptação e <a href="">generalização</a>, respectivamente. Mais
+                    especificamente, a interpretação probabilística considera a não-linearidade da ativação como uma <a href="">função de distribuição</a>
+                    <a href="">cumulativa.</a><sup><a href="">[24]</a></sup> Ver <a href="" id="juergen">rede de crença profunda</a>. A interpretação probabilística levou à introdução de abandono como regularizador em
+                    redes neurais.<a href=""><sup>[25]</sup></a>
+                </p>
+
+                <p>A interpretação probabilística foi introduzida e popularizada por Geoff Hinton, Yoshua Bengio, Yann LeCun e Juergen Schmidhuber.</p>
+            </article>
+        
+            <section>
+                <h1>História</h1>
+                <hr>
+
+                <p>
+                   O primeiro algoritmo geral e funcional de aprendizagem para perceptrons multicamadas supervisionados de alimentação direta
+                   profunda foi publicado por <a href="" id="juergen">Ivakhnenko</a> e Lapa em 1965.<sup><a href="">[26]</a></sup> Um artigo de 1971 já descrevia uma rede profunda com 8 camadas
+                   treinada pelo algoritmo do <a href="" id="juergen">método de grupo para manipulação de dados</a> que ainda é popular no milênio atual.<sup><a href="">[27]</a></sup> Estas ideias foram
+                   implementadas em um sistema de identificação por computador "Alfa", que demonstrou o processo de aprendizagem. Outras
+                   arquiteturas de aprendizado profundo funcionais, especificamente aquelas construídas a partir de <a href="">redes neurais artificiais</a> (ANN), são
+                   do tempo do Neocognitron introduzido por Kunihiko Fukushima, em 1980.<sup><a href="">[28]</a></sup> As próprias ANNs são ainda mais antigas. O desafio era
+                   como treinar redes com múltiplas camadas. Em 1989,<a href=""> Yann LeCun</a> et al. foram capazes de aplicar o algoritmo de <a href="" id="juergen">retropropagação</a>
+                   padrão, que esteve em uso como o modo inverso de <a href="">diferenciação automática</a> desde 1970,<sup><a href="">[29][30][31][32]</a></sup> em uma rede neural
+                   profunda com o propósito de reconhecer códigos de CEP manuscritos em cartas. Apesar do sucesso na aplicação do algoritmo, o
+                   tempo para treinar a rede neste conjunto de dados era de aproximadamente 3 dias, tornando-se impraticável para uso geral.<sup><a href="">[33]</a></sup> Em
+                   1993, o compressor neural de história de Jürgen Schmidhuber<sup><a href="">[17]</a></sup> implementado como uma pilha não supervisionada de redes
+                   neurais recorrentes (RNNs) resolveu uma tarefa de "aprendizagem muito profunda",<sup><a href="">[5]</a></sup> que requer mais de 1 000 camadas
+                   subsequentes em uma RNN desenrolada no tempo.<sup><a href="">[34]</a></sup> Em 1994, Andre C. P. L. F. de Carvalho, Mike C. Fairhurst e David Bisset,
+                   publicaram um artigo com proposta e avalição experimental de uma rede neural booleana, também conhecida por rede neural sem
+                   pesos, com várias camadas compondo dois módulos, uma rede auto-organizável para extração de características seguida por uma
+                   rede neural para classificação, que eram treinadas de forma independente e sequencial.<sup><a href="">[35]</a></sup> Em 1995, Brendan Frey demonstrou que
+                   era possível treinar uma rede contendo seis camadas totalmente conectadas e várias centenas de unidades ocultas usando o
+                   algoritmo wake-sleep, que foi codesenvolvido com Pedro Dayan e Geoffrey Hinton.<sup><a href="">[36]</a> </sup>No Entanto, o treinamento levou dois dias. 
+                </p>
+
+                <p>
+                    Um dos vários fatores que contribuem para a baixa velocidade é o <a href="" id="juergen">problema da dissipação do gradiente</a>, analisado em 1991,
+                     por Sepp Hochreiter.<sup><a href="">[37][38] </a> </sup>
+                </p>
+
+                <p>
+                    Enquanto em 1991 tais redes neurais eram usadas para reconhecer dígitos isolados manuscritos em 2-D, o reconhecimento de
+                    objetos 3-D era feito correspondendo imagens 2-D com um modelo 3-D do objeto feito à mão. Juyang Weng et al. sugeriram que o
+                    <a href="">cérebro</a> humano não usa um modelo 3-D monolítico do objeto, e em 1992, eles publicaram o Cresceptron,<sup><a href="">[39][40][41]</a></sup> um método para
+                    realizar o reconhecimento de objetos 3-D diretamente a partir de cenas desordenadas. O Cresceptron é uma cascata de camadas
+                    semelhantes ao Neocognitron. Mas enquanto o Neocognitron requer que um programador humano junte características à mão, o
+                    Cresceptron aprende automaticamente um número aberto de características não supervisionadas em cada camada, em que cada
+                    característica é representada por um núcleo de convolução. O Cresceptron também segmentou cada objeto aprendido a partir de
+                    uma cena desordenada através de retroanálise ao longo da rede. <a href="">Max poolling</a>, agora, muitas vezes, adotadas por redes neurais
+                    profundas (por exemplo, testes <a href="" id="juergen">ImageNet</a>), foi usado pela primeira vez no Cresceptron para reduzir a resolução de posição por um
+                    fator de (2x2) para 1 através da cascata para uma melhor generalização. Apesar dessas vantagens, os modelos mais simples que
+                    usam características feitas à mão específicas de cada tarefa tais como filtros de Gabor e <a href="">máquinas de vetores de suporte</a> (SVMs)
+                    foram uma escolha popular nas décadas de 1990 e 2000, devido ao custo computacional de ANNs na época, e uma grande falta de
+                    entendimento de como o cérebro conecta de forma autônoma suas redes biológicas.  
+                </p>
+
+                <p>
+                    Na longa história do reconhecimento de voz, tanto a aprendizagem rasa quanto a aprendizagem profunda de redes neurais artificiais
+                    (por exemplo, redes recorrentes) têm sido exploradas por muitos anos.<sup><a href="">[42][43][44]</a></sup>Mas esses métodos nunca superaram
+                    o trabalho
+                    manual interno não uniforme do <a href="">modelo de mistura</a> de Gaussianas/<a href="">modelo oculto de Markov</a> (GMM-HMM) baseados na tecnologia
+                    de modelos geradores de fala treinados de forma discriminada.<sup><a href="">[45]</a></sup> Algumas das principais dificuldades
+                     tem sido analisadas
+                    metodologicamente, incluindo a redução do gradiente<sup><a href="">[37]</a> </sup> e fraca estrutura de correlação temporal 
+                    nos modelos neurais de
+                    previsão.<sup><a href="">[46][47]</a></sup> Outras dificuldades foram a falta de grandes dados para treinamento e um poder de
+                     computação mais fraco nas
+                    etapas iniciais. Assim, a maioria dos pesquisadores de reconhecimento de voz que compreendiam essas barreiras, afastou-se das
+                    redes neurais para perseguir a modelagem geradora. Uma exceção estava no <a href="">SRI Internacional</a> no final da década de 1990.
+                    Financiado pela <a href="">NSA</a> e a <a href="">DARPA</a> do governo dos EUA, SRI realizou uma pesquisa sobre redes neurais profundas para o
+                    reconhecimento de voz e de falante. A equipe de reconhecimento de falante, liderada por <a href="">Larry Heck</a>, atingiu o primeiro grande
+                    sucesso com redes neurais profundas em processamento de fala, como demonstrado na <a href="">
+                        avaliação do reconhecimento de falante do
+                        NIST (Instituto Nacional de Padrões e Tecnologia)
+                    </a> em 1998 e, posteriormente, publicado na revista de Comunicação de Voz.<sup><a href="">[48]</a></sup>
+                    Embora o SRI tenha obtido sucesso com redes neurais profundas no reconhecimento de falante, eles não tiveram êxito em
+                    demonstrar sucesso semelhante em reconhecimento de fala. Hinton et al. e Deng et al. revisaram parte desta recente história sobre
+                    como a sua colaboração uns com os outros e então com colegas de quatro grupos (Universidade de Toronto, Microsoft, Google e
+                    IBM) provocou um renascimento das redes neurais de alimentação direta no reconhecimento de fala.<sup><a href="">[49][50][51][52]</a> </sup>
+                </p>
+
+                <p>
+                    Hoje, no entanto, muitos aspectos do reconhecimento de voz foram tomados por um método de aprendizagem profunda chamado de longa memória de
+                    curto prazo (LSTM), uma rede neural recorrente publicada por Sepp Hochreiter & Jürgen Schmidhuber, em
+                    1997.<sup><a href="">[53]</a></sup> As RNNs LSTM evitam o problema da dissipação do gradiente e podem aprender tarefas de "Aprendizado Muito
+                    Profundo"<sup><a href="">[5]</a></sup> que necessitam de memórias de eventos que aconteceram milhares de pequenos passos
+                     de tempo atrás, o que é
+                    importante para a fala. Em 2003, LSTM começou a tornar-se competitiva com os reconhecedores de voz tradicionais em
+                    determinadas tarefas.<sup><a href="">[54]</a></sup> Posteriormente, ela foi combinada com CTC<sup><a href="">[55]</a></sup> em 
+                    pilhas de RNNs de LSTM.<sup><a href="">[56]</a></sup> Em 2015, o
+                    reconhecimento de voz do Google teria experimentado um salto dramático de desempenho de 49% por meio de LSTM treinada por
+                    CTC, que agora está disponível para todos os usuários de smartphones através do <sup><a href="">Google Voice</a></sup>,<sup><a href="">[57]</a></sup> e tornou-se uma demonstração
+                    da aprendizagem profunda. 
+                </p>
+
+                <p>
+                    De acordo com uma pesquisa,<sup><a href="">[8]</a></sup> a expressão "aprendizagem profunda" trazida para a comunidade de <a href="">aprendizagem de máquina</a> por Rina Dechter
+                    em 1986,<sup><a href="">[15]</a></sup> e depois para <a href="">redes neurais artificiais</a> por Igor Aizenberg e colegas em 2000.<sup><a href="">[58]</a></sup> Um gráfico do Google
+                    Ngram mostra que o uso da expressão ganhou força (realmente decolou) desde 2000.<sup><a href="">[59]</a></sup> Em 2006, uma plublicação por Geoffrey
+                    Hinton e Ruslan Salakhutdinov chamou mais atenção mostrando como redes neurais de alimentação direta poderiam ser pré-
+                    treinadas uma camada por vez, tratando cada uma delas como uma máquina de Boltzmann restrita não supervisionada, e então
+                    fazendo ajustes finos por meio de propagação reversa supervisionada.<sup><a href="">[60]</a></sup> Em 1992, Schmidhuber já havia implementado uma ideia
+                    bastante similar para o caso mais geral de hierarquias profundas não supervisionadas de redes neurais recorrentes, e também
+                    mostrado experimentalmente a sua vantagem na aceleração do aprendizado supervisionado.<sup><a href="">[17][61] </a> </sup>
+                </p>
+
+                <p>
+                    Desde o seu ressurgimento, a aprendizagem profunda se tornou parte de diversos sistemas de estado da arte em várias disciplinas,
+                    particularmente visão computacional e <a href="">reconhecimento automático de fala</a> (ASR). Os resultados em conjuntos usados
+                    frequentemente para avaliação, tais como o TIMIT (ASR) e o <a href="">MNIST (classificação de imagens)</a>, bem como uma gama de tarefas de
+                    reconhecimento de fala de grandes vocabulários estão constantemente sendo melhorados com novas aplicações de aprendizagem
+                    profunda.<sup><a href="">[49][62][63]</a> </sup>Recentemente, foi mostrado que arquiteturas de aprendizagem profunda na forma de redes neurais de
+                    convolução tem obtido praticamente o melhor desempenho;<sup><a href="">[64][65]</a></sup> no entanto, estas são usadas mais amplamente em visão
+                    computacional do que em ASR, e o reconhecimento moderno de fala em larga escala geralmente é baseado em CTC<sup><a href="">[55]</a> </sup>para
+                    LSTM.<sup><a href="">[53][57][66][67][68]</a></sup>
+                </p>
+
+                <p>
+                   O verdadeiro impacto da aprendizagem profunda na indústria começou, aparentemente, no início da década de 2000, quando as
+                   CNNs já processavam um percentual estimado de 10% a 20% de todos os cheques escritos nos EUA, no início da década de 2000,
+                   de acordo com Yann LeCun.<sup><a href="">[69]</a></sup> Aplicações industriais de aprendizagem profunda ao reconhecimento de voz de grande escala
+                   começaram por volta de 2010. No final de 2009, Li Deng convidou Geoffrey Hinton para trabalhar com ele e seus colegas na
+                   Microsoft Research em Redmond, Washington na aplicação de aprendizagem profunda no reconhecimento de fala. Eles co-
+                   organizaram o Workshop NIPS de 2009 em aprendizagem profunda para o reconhecimento de fala. O seminário foi motivado pelas
+                   limitações dos modelos geradores de fala profundos, e pela possibilidade de que a era da big-computação e do big-data justificavam
+                   testes sérios com redes neurais profundas (DNN). Acreditava-se que o pré-treinamento de DNNs usando modelos geradores de
+                   redes de crenças profundas (DBN) iria superar as principais dificuldades das redes neurais encontradas na década de 1990.<sup><a href="">[51]</a></sup> No
+                   entanto, no início desta pesquisa na Microsoft, foi descoberto que, sem pré-treino, mas com o uso de grandes quantidades de dados
+                   de treinamento, e, especialmente, DNNs projetadas com igualmente grandes camadas de saída dependentes de contexto, eram
+                   produzidas taxas de erro drasticamente menores do que GMM-HMM de estado da arte e também do que sistemas mais avançados
+                   de reconhecimento de voz baseados em modelos geradores. Esta constatação foi verificada por vários outros grandes grupos de
+                   pesquisa em reconhecimento de fala.<sup><a href="">[49][70]</a></sup> Além disso, a natureza dos erros de reconhecimento produzidos pelos dois tipos de
+                   sistemas se mostrou caracteristicamente diferente,<sup><a href="">[50][71]</a></sup> oferecendo insights técnicos sobre como integrar a aprendizagem profunda
+                   nos sistemas existentes e altamente eficientes de decodificação de fala implantados pelos principais membros da indústria de
+                   reconhecimento de fala. A história deste desenvolvimento significativo na aprendizagem profunda tem sido descrito e analisado em
+                   livros e artigos recentes.<sup><a href="">[2][72][73]</a> </sup>
+                </p>
+
+                <p>
+                    Os avanços em hardware também foram importantes no sentido de renovar o interesse na aprendizagem profunda. Em particular,
+                    <a href="">unidades de processamento gráfico</a> (GPUs) poderosas são bastante adequadas para o tipo de manipulação de números e
+                    matemática matricial e vetorial envolvidas na aprendizagem de máquina.<sup><a href="">[74][75]</a></sup> Tem sido mostrado que as GPUs aceleram algoritmos
+                    de treinamento em ordens de magnitude, trazendo os tempos de execução de semanas para dias.<SUP><a href="">[76][77] </a></SUP>
+
+                </p>
+            </section>
+
+            <section>
+                <h1>Redes Neurais Artificiais</h1>
+                <hr>
+
+                <p>
+                    Alguns dos métodos mais bem sucedidos de aprendizagem profunda envolvem <a href="">redes neurais</a> artificiais. Redes neurais artificiais são
+                    inspiradas pelo modelo biológica de 1959 proposto por <a href="">David H. Hubel</a> e <a href="">Torsten Wiesel</a>, ambos <a href="">premiados com o Nobel</a>, que descobriram que
+                    dois tipos de células no córtex visual primário: células simples e células complexas. Muitas redes neurais artificiais
+                    podem ser vistas como modelos em cascata<a href="">[39][40][41][78]</a> de tipos de células inspirados por estas observações biológicas.
+                </p>
+
+                <p>
+                    Neocognitron de Fukushima introduziu redes neurais <a href="">convolucionais</a> parcialmente treinadas por aprendizagem não-supervisionada com
+                     características direcionadas por humanos no plano neural. Yann LeCun et al. (1989), aplicaram retropropagação supervisionada
+                    a estas arquiteturas.<sup><a href="">[79]</a></sup> Weng et al. (1992) publicaram redes neurais convolucionais Cresceptron<sup><a href="">[39][40][41]</a></sup> para o reconhecimento
+                     de objetos 3-D a partir de imagens de cenas desordenadas e para a segmentação de tais objetos a partir de imagens. 
+                </p>
+
+                <p>
+                    Uma necessidade óbvia para o reconhecimento de objetos 3-D em geral é uma menor invariância a deslocamentos
+                     e tolerância à deformação. O max-pooling parece ter sido proposto pela primeira vez por Cresceptron<sup><a href="">[39][40] </a></sup>para permitir que a rede tolerasse
+                    de pequenas a grandes deformações de uma forma hierárquica, ao mesmo tempo em que é utilizada a convolução. O max-pooling ajuda, mas não garante, 
+                    invariância a deslocamentos no nível dos pixels.<sup><a href="">[41] </a></sup>
+                </p>
+
+                <p>
+                    Com o advento do algoritmo de retropropagação baseado na <a href="">diferenciação automática</a>,<sup><a href="">[29][31][32][80][81][82][82][83][84][85]</a></sup> muitos pesquisadores tentaram treinar <a href="">redes neurais artificiais</a> profundas supervisionadas a partir
+                    do zero, inicialmente com pouco sucesso. A tese de Sepp Hochreiter de 1991<sup><a href="">[37][38]</a> </sup>identificou formalmente o motivo para esta falha como o problema da dissipação do gradiente, que afeta redes de alimentação direta de muitas
+                    camadas e redes neurais recorrentes. Redes recorrentes são treinadas desdobrando-as em redes de alimentação direta muito profundas, em que uma nova camada é criada para cada passo de tempo de uma seqüência de entrada processada
+                    pela rede. Conforme os erros se propagam de camada para camada, eles diminuem exponencialmente com o número de camadas, impedindo o ajuste dos pesos dos neurônio, que são baseados nesses erros.  
+                </p>
+
+                <p>
+                    Para superar este problema, foram propostos vários métodos. Um deles é a hierarquia de vários níveis de redes de Jürgen Schmidhuber (1992), pré-treinada nível por nível por aprendizagem não supervisionado, ajustada por
+                    retropropagação.<sup><a href="">[17]</a></sup> Aqui, cada nível aprende uma representação compactada das observações que alimentam o próximo nível.  
+                </p>
+
+                <p>
+                    Sven Behnke, em 2003, baseou-se apenas no sinal do gradiente (Rprop) ao treinar a sua Pirâmide de Abstração Neural<sup><a href="">[86]</a></sup>
+                    para resolver problemas como a reconstrução de imagens e a localização de faces.  
+                </p>
+            </section>
+
+            <section>
+                <h1>Bibliotecas de software</h1>
+                <hr>
+
+                <ul id="lista_definicoes">
+                    <li>
+                        <p>
+                            Caffe — Um framework de aprendizagem profunda especializado em reconhecimento de imagem.  
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <a href="" id="juergen">Deeplearning4j</a> — Uma biblioteca de <a href="">código aberto<sup>[87]</sup></a> para aprendizagem profunda escrita para Java/C++ com LSTMs e redes convolucionais, suportada por <a href="">Skymind</a>. Ela fornece paralelização com Spark em CPUs e GPUs.  
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Gensim — Um conjunto de ferramentas para processamento de linguagem natural implementado na linguagem de programação Python.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <a href="">Keras</a> — um framework de aprendizagem profunda de código aberto para a linguagem de programação Python.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Microsoft <a href="" id="juergen">CNTK</a> (Computational Network Toolkit) — conjunto de ferramentas de código-aberto<sup><a href="">[88]</a></sup> da Microsoft para aprendizagem profunda, para Windows e Linux. ela fornece paralelização com CPUs e GPUs através de servidores múltiplos.<sup><a href="">[89]</a> </sup>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <a href="">OpenNN</a> — Uma biblioteca de código aberto em C++ que implementa redes neurais profundas e fornece paralelização com CPUs. 
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <a href="">TensorFlow</a> — biblioteca de código aberto do <a href="">Google</a> para o aprendizado de máquina em <a href="">C++</a> e <a href="">Python</a> com APIs para ambas. Ela fornece paralelização com CPUs e GPUs.<a href="">[90] </a>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Theano — Uma biblioteca de código aberto para aprendizado de máquina para a linguagem Python, suportada pela <a href="">Universidade de Montreal</a> e o time de Yoshua Bengio.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Torch — Uma biblioteca de software de código aberto para aprendizado de máquina baseada na linguagem de programação Lua e usada pelo Facebook.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h1 id="vertambem">Ver também</h1>
+                <hr>
+
+                <ul id="lista_definicoes">
+                    <li>Aplicações de inteligência artificial</li>
+                    <li>Aprendizado por transferência</li>
+                    <li><a href="" id="juergen">Máquina de Boltzmann</a></li>
+                    <li>Amostragem compressiva</li>
+                    <li><a href="">Conexionismo</a></li>
+                    <li><a href="" id="juergen">Echo state network</a></li>
+                    <li>Lista de projetos de inteligência artificial</li>
+                    <li><a href="">Máquina de estado líquido</a></li>
+                    <li>Lista de conjuntos de dados para pesquisas em aprendizagem de máquina</li>
+                    <li>Reservoir computing</li>
+                    <li>Codificação esparsa</li>
+                    <li>Rede de estado de eco</li>
+                </ul>
+            </section>
         </main>
 
         <div class="anchors">
             <h2>Neste Artigo</h2>
             <ul>
-                <li><a href="#">Âncoras</a></li>
+                <li><a href="#">Aspeto</a></li><br>
+                <button type="button">ocultar</button><br><br>
+
+                <li>Texto</li>
+                <hr>
+
+                <li><input type="radio" id="texto" name="texto"><label for="texto">Pequeno</label></li>
+                <li><input type="radio" id="texto" name="texto"><label for="texto">Padrao</label></li>
+                <li><input type="radio" id="texto" name="texto"><label for="texto">Grande</label></li><br>
+
+                <li>Largura</li>
+                <hr>
+                <li><input type="radio" id="largura" name="largura"><label for="largura">Padrao</label></li>
+                <li><input type="radio" id="largura" name="largura"><label for="largura">Largo</label></li><br><br>
+
+                <li>Cor (Beta)</li>
+                <hr>
+
+                <li><input type="radio" id="cor" name="cor"><label for="cor">Automatico</label></li>
+                <li><input type="radio" id="cor" name="cor"><label for="cor">Claro</label></li>
+                <li><input type="radio" id="cor" name="cor"><label for="cor">Noite</label></li>
+                
             </ul>
         </div>
     </div>
 
-    <footer>
-
-    </footer>
 </body>
 </html>
